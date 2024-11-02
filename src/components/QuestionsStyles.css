@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.questions-page {
+    width: 100%;
+    min-width: 390px;
+    max-width: 1280px;
+    height: 100%;
+}
+
+.questions-page .question-card img {
+    height: 250px;
+    box-sizing: border-box;
+    border: 2px solid #333;
+}
+
+.questions-page .question-card .option-countdown {
+    margin: 80px 0;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.questions-page .question-card .option-countdown span {
+    color: #ff3030;
+}
+
+.questions-page .question-card button {
+    font-family: "Poppins", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 10px 0;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 80%;
+    height: auto;
+    min-height: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.questions-page .question-card button:disabled {
+    pointer-events: none;
+    background-color: #F1F2F6;
+}
+
+.questions-page .question-card button:not(:disabled):hover {
+    background-color: orange;
+}
+
+.questions-page .question-card button.correct {
+    background-color: 	#7cfc00;
+}
+
+.questions-page .question-card button.incorrect {
+    background-color: #ff3030;
+}
